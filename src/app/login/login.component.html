@@ -1,0 +1,39 @@
+<div class="bilan_presentation blue_brgd">
+  <img class="logo_intro" src="assets/images/logos/Billan_cabezote@2x.png" />
+  <p class="text_intro">INGRESAR</p>
+  <form class="form_login_register" action="03 - bienvenido.html">
+    <label form="login_form">Número de identificación:</label><br />
+    <input
+      type="text"
+      placeholder="Número de Identificación"
+      id="fname"
+      name="fname"
+    /><br />
+    <label form="lname">Tipo de identificación:</label><br />
+    <select name="type_id" id="type_id" form="carform">
+      <option value="nuip">NUIP</option>
+      <option value="doc_id">Documento de Identidad</option>
+      <option value="c_c">Cédula de Ciudadanía</option>
+      <option value="c_e">Cédula de Extranjería</option>
+    </select>
+    <label form="lname">Tipo de Perfil:</label><br />
+    <span class="select_type">
+      <input
+        type="radio"
+        name="tipo_perfil"
+        value="maestro"
+        dataurl="./bienvenido-teacher.html"
+      />Docente
+      <input
+        type="radio"
+        name="tipo_perfil"
+        value="Estudiante"
+        checked=""
+        dataurl="03 - bienvenido.html"
+      />Estudiante
+    </span>
+    <a routerLink="/home" id="ingresar-link"
+      ><input class="btn_form btn_intro" type="button" value="Ingresar"
+    /></a>
+  </form>
+</div>

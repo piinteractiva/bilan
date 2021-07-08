@@ -1,0 +1,54 @@
+<div class="texture_brgd">
+  <div class="padding_1280pxx">
+    <nav
+      class="lateral_nav"
+      id="lateral_nav"
+      tabindex="1"
+      style="position: fixed; left: 105px; outline: none"
+    >
+      <div class="separador3"></div>
+      <ul class="btn_fases">
+        <li onclick="open_menu1()">Fase Preactiva</li>
+        <ul id="menu_01" class="open">
+          <a routerLink="../1"><span></span>Actividad 1</a>
+          <a routerLink="../2"><span></span>Actividad 2</a>
+        </ul>
+        <br />
+        <li onclick="open_menu2()">Fase Interactiva</li>
+        <ul id="menu_02" class="closed">
+          <a routerLink="../4"><span></span>Actividad 3</a>
+        </ul>
+        <br />
+        <li onclick="open_menu3()">Fase Postactiva</li>
+        <ul id="menu_03" class="closed"></ul>
+        <br />
+        <ul class="span_">
+          <span class="icon_alerta"></span>
+          <p class="p_parrafo">
+            Al final de cada fase debes cargar el archivo con los ejercicios
+            desarrollados en las actividades. Recopila todos los ejercicios en
+            un (1) sólo documento o imagen.
+          </p>
+        </ul>
+        <ul class="span_">
+          <span class="icon_comp1"></span
+          ><span class="icon_comp2"></span
+          ><span class="icon_comp3"></span>
+          <p class="p_parrafo">
+            <span class="span_competencias">COMPETENCIAS</span>En cada actividad
+            se fortalecen algunas de las siguientes competencias, sus iconos
+            indicarán cuál de ellas.
+          </p>
+          <br /><br />
+        </ul>
+      </ul>
+      <div class="lateral_nav-separador"></div>
+    </nav>
+    <section
+      class="contenct_modulo"
+      id="contenct_modulo"
+      style="max-width: unset"
+      [innerHTML]="module[page - 1]"
+    ></section>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="texture_brgd" *ngIf="isValidMateria">
+  <app-module-bar></app-module-bar>
+  <main class="main_modulo">
+    <ul class="nav_intro_actividades_retos">
+      <li>
+        <a routerLink="./actividades/10/1">
+          <img
+            [src]="
+              'assets/images/fondos/Fondo Reto y Actividad/module-intro/actividades-' +
+              materia +
+              '.png'
+            "
+          />
+          <p class="btn_intro_actyretos">Actividades</p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="./actividades/10">
+          <img
+            [src]="
+              'assets/images/fondos/Fondo Reto y Actividad/module-intro/retos-' +
+              materia +
+              '.png'
+            "
+          />
+          <p class="btn_intro_actyretos">Retos</p>
+        </a>
+      </li>
+    </ul>
+    <img src="assets/images/fondos/Fondo_division.png" />
+    <ul class="submenu_retosyactividades">
+      <li class="btn_modulos">
+        <span><a href="">Bibliografía</a></span>
+      </li>
+      <li class="btn_maloka">
+        <span><a href="">Tu rol</a></span>
+      </li>
+      <li class="btn_perfil">
+        <span><a href="">Estándares básicos que se privilegian</a></span>
+      </li>
+      <li class="btn_modulos">
+        <span><a href="">ODS</a></span>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <img src="assets/images/logos/MinEducacion@2x_footer.png" />
+    <img src="assets/images/logos/Salle@2x_footer.png" />
+    <img class="img_uptc" src="assets/images/logos/UPTC@2x_footer.png" />
+    <img src="assets/images/logos/UAN@2x_footer.png" />
+  </footer>
+</div>
+
+<app-page-not-found *ngIf="!isValidMateria"></app-page-not-found>
